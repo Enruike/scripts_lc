@@ -2,7 +2,12 @@ import matplotlib.pyplot as plt
 #Abrir el archivo donde tenemos guardadas las energías.
 
 #folders=["seed4/", "seed5/", "seed6/", "seed9/"]
+<<<<<<< HEAD
 folders=["rds070", "rds072", "rds074", "rds076", "rds078", "rds080", "rds082", "rds084", "rds086", "rds088", "rds090"]
+=======
+folders=["07epsilon", "14epsilon", "21epsilon", "28epsilon", ]
+#folders=["rds080", "rds082", "rds084", "rds086", "rds088", "rds090"]
+>>>>>>> d351ab9b73833c848210215bdb0215f96628296f
 allenergies = []
 all_ldg = []
 all_elastic = []
@@ -81,7 +86,13 @@ for folder in folders:
 
 
 #configurations=["BP1[200]", "BP1[110]", "BP2[100]", "BP2[111]"]
+<<<<<<< HEAD
 configurations=["0.70", "0.72", "0.74", "0.76", "0.78", "0.80", "0.82", "0.84", "0.86", "0.88", "0.90"]
+=======
+#configurations=["0.80", "0.82", "0.84", "0.86", "0.88", "0.90"]
+configurations=["07epsilon", "14epsilon", "21epsilon", "28epsilon", ]
+
+>>>>>>> d351ab9b73833c848210215bdb0215f96628296f
 TypesOfEnergy_no_surf = ['LdG', 'Elastic', 'Chiral', 'Total']
 
 for i in range(len(configurations)):
