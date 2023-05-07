@@ -144,9 +144,9 @@ int main(int argc, char *argv[]){
 	Ny2 = lrint((Ny - 1) / dim) + 1;
 	Nz2 = lrint((Nz - 1) / dim) + 1;
 	points_red = Nx2 * Ny2 * Nz2;
-	int rx = lrint(Nx * 0.5);
-	int ry = lrint(Ny * 0.5);
-	int rz = lrint(Nz * 0.5);
+	int rx = lrint((Nx - 1) / 2);
+	int ry = lrint((Ny - 1) / 2);
+	int rz = lrint((Nz - 1) / 2);
 
 	float* S_array;
 	S_array = (float*)malloc(points_red * sizeof(float));
