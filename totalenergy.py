@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 #Abrir el archivo donde tenemos guardadas las energías.
 
 #folders=["seed4/", "seed5/", "seed6/", "seed9/"]
-folders=["07epsilon", "14epsilon", "21epsilon", "28epsilon", ]
+folders=["07epsilon", "14epsilon", "21epsilon", "28epsilon"]
 #folders=["rds080", "rds082", "rds084", "rds086", "rds088", "rds090"]
 allenergies = []
 all_ldg = []
