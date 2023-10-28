@@ -1,11 +1,14 @@
 import matplotlib.pyplot as plt
 #Abrir el archivo donde tenemos guardadas las energías.
 
-roots=["seed5_80rds", "seed6_72rds", "seed135_80rds", "seed875_80rds"]
-names=["BPII", "BPI", "RSS", "HelZ"]
+roots=["BPI", "BPII", "HELZ", "RSS"]
+names=["BPI", "BPII", "HELZ", "RSS"]
+
+#roots=["BPI", "BPII", "CHOL"]
+#names=["BPI", "BPII", "CHOL"]
 #folders=["seed4/", "seed5/", "seed6/", "seed9/"]
-folders=["00epsilon", "07epsilon", "14epsilon", "21epsilon", "28epsilon"]
-#folders=["rds080", "rds082", "rds084", "rds086", "rds088", "rds090"]
+#folders=["00eps", "05eps", "10eps", "20eps", "40eps", "60eps", "130eps"]
+folders=["00eps", "20eps", "40eps", "60eps", "130eps"]
 all_ldg = []
 all_elastic = []
 all_chiral = []
@@ -86,7 +89,8 @@ for root in roots:
         # plt.savefig(folder + '/Energy_Contribution.png', dpi = 1200, bbox_inches='tight')
         # plt.clf()
 
-    configurations=["0.00", "0.07", "0.14", "0.21", "0.28"]
+    #configurations=["0.00", "0.05", "0.10", "0.20", "0.40", "0.60", "1.30"]
+    configurations=["0.00", "0.20", "0.40", "0.60", "1.30"]
     plt.plot(configurations, allenergies, marker = 'o')
     plt.legend(names)
 
